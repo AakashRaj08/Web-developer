@@ -1,0 +1,307 @@
+body {
+    background: #06181f;
+    width: 100vw;
+    overflow-x:hidden;
+}
+#right-tire , 
+#left-tire{
+    animation: tire 2s linear infinite;
+    transform-origin:center;
+    transform-box:fill-box;
+    fill:white;
+}
+
+
+    #right-tire path {
+        fill: darkgray;
+    }
+
+    #left-tire path {
+        fill: darkgray;
+    }
+
+@keyframes tire {
+    from{
+        transform:rotateZ(0deg)
+    }
+    to 
+    {
+        transform:rotateZ(360deg)
+    }
+}
+
+
+
+.top-portion{
+    width:100vw;
+    height:100vh;
+    z-index:10;
+    display:flex;
+    position:relative;
+    align-items:center;
+    padding-left:50px;
+
+}
+
+.svg-cycle{
+    position:absolute;
+    right:0;
+}
+
+
+
+.heading-intro span{
+    color:white;
+    width:fit-content;
+    font-size:70px;
+}
+
+    .heading-intro span:hover {
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    cursor:pointer;
+
+}
+
+.name{
+    position:relative;
+}
+
+.heading-intro{
+    position:relative;
+    width:fit-content;
+}
+.web-d {
+    color: salmon;
+    width: fit-content;
+    font-size: 20px;
+    transform: rotate(270deg);
+    position: absolute;
+    top:0px;
+    right:-90px;
+}
+
+
+.hello2 {
+    width: 50vw;
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size:25px;
+    letter-spacing:3px;
+}
+
+.project{
+    padding-left:50px;
+    color:white;
+    font-size:50px;
+    position:relative;
+}
+
+.project-boxes{
+    display:flex;
+    width:50vw;
+    justify-content:space-between;
+}
+
+.project-box {
+    margin-top: 50px;
+    width: 200px;
+    height: 220px;
+    background: #BBD2C5; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #536976, #BBD2C5); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    position: relative;
+}
+
+    .project-box:nth-child(2) {
+        background: #649173; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #DBD5A4, #649173); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #DBD5A4, #649173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .project-box:nth-child(3) {
+        background: #8e9eab; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #eef2f3, #8e9eab); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+.number{
+    position:absolute;
+    top:-25px;
+    left:10px;
+    color:black;
+
+}
+
+.title{
+    position:absolute;
+    right:0;
+    bottom:5px;
+    text-transform:uppercase;
+    font-size:25px;
+    letter-spacing:5px;
+    text-align:right;
+    color:black;
+ 
+}
+
+.idea-svg{
+    position:absolute;
+    top:0;
+    right:25px;;
+}
+
+.achievement{
+    padding-left:50px;
+    color:white;
+    width:70vw;
+    font-size:50px;
+    margin-top:90px;
+}
+
+.achievement-boxes{
+    display:flex;
+    justify-content:space-between;
+}
+.achievement-box{
+    padding-left:15px;
+    margin-top:50px;
+    width:300px;
+    height:50px;
+    display:flex;
+    align-items:center;
+}
+
+.achieve {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+ 
+}
+.bi-trophy{
+    margin-right:20px;
+}
+.bi-trophy path {
+    fill: transparent;
+    stroke-width: 0.3;
+    stroke: #f3ec78;
+    stroke-dasharray:69;
+    stroke-dashoffset:69;
+  
+}
+
+.achievement-box:hover{
+    cursor:pointer;
+}
+
+.achievement-box:hover .bi-trophy path {
+    animation: animate 2s linear forwards;
+   
+}
+
+.sub-num {
+    font-size: 20px;
+    position: relative;
+    left: 10px;
+    top: -10px;
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+@keyframes animate {
+    0%{
+        stroke-dashoffset:69;
+    }
+    100%{
+        stroke-dashoffset:0;
+    }
+}
+
+/* ==========================like btn================================= */
+#like_count{
+    margin-top : -36px;
+    font-size : 20px;
+    margin-left : 45px
+}
+
+/* ============================date==================================== */
+#date_wrapper{
+    padding:10px;
+    margin-top : 30px;
+    text-align : center;
+    font-size : 25px;
+    letter-spacing: 1px;
+    width:100vw;
+    margin-left : -10px;
+    color : whitesmoke;
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+}
+
+/* ============================time==================================== */
+#timer_wrapper{
+    background-color : white;
+    padding : 10px;
+    margin-right : 10vh;
+    width:100vw;
+    margin-left : -10px;
+    display: flex;
+    font-size: 20px;
+    color:white;
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+}
+
+#reset{
+    color :blue;
+    margin-top :5px
+}
+
+/* ==============================light=================================== */
+#light{
+    height : 100px;
+    width  : 100px;
+    border : 10px solid aqua;
+    border-radius : 50%;
+    float  : right;
+    margin-top : -400px;
+    margin-right : 100px;
+}
+
+#innerlight{
+    height : 50px;
+    width  : 50px;
+    background-color : aqua;   
+    border-radius : 50%;
+    float  : right;
+    margin-top : 15px;
+    margin-right : 15px;
+    z-index : 1 !important;
+}
+
+#switch{
+    margin-top : 15px;
+    margin-left : 15px;
+}
+
+.glow_inner{
+    box-shadow:0px 0px 20px aqua; 
+}
+
+.glow_outer{
+    box-shadow:0px 0px 50px 40px aqua; 
+}
